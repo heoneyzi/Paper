@@ -148,7 +148,7 @@ Not included: DiDeMo and VidSTG videos, the full processed similarity files (the
 
 ## 🔗 Links
 
-- 💻 Original repository: [heoneyzi/Frame_based_Training_Free-Video_Temporal_Grounding](https://github.com/heoneyzi/Frame_based_Training_Free-Video_Temporal_Grounding) · 🌐 [Research portfolio — publications](https://heoneyzi.github.io/#publications)
+- 💻 Original repository: [heoneyzi/Frame_based_Training_Free-Video_Temporal_Grounding](https://github.com/heoneyzi/Frame_based_Training_Free-Video_Temporal_Grounding) · 🌐 [Research portfolio — publications](https://heoneyzi.github.io/#papers)
 - 🎥 Where the project came from: [deep daiv. multimodal track](https://github.com/heoneyzi/Deep_Daiv/blob/main/Project/Multimodal/README.md) · 🗒️ [TFVTG review](https://github.com/heoneyzi/Deep_Daiv/blob/main/Project/Multimodal/notes/03_tfvtg_review/README.md) · [design notes](https://github.com/heoneyzi/Deep_Daiv/blob/main/Project/Multimodal/notes/06_ftfvtg_score_design/README.md)
 - 📰 Newsletter #109 “AI는 어떻게 동영상 하이라이트를 만들까?” (2025-09-17): [stib.ee/PbLJ](https://stib.ee/PbLJ) · [newsletter archive](https://github.com/heoneyzi/Deep_Daiv/blob/main/Contents/NewsLetter/README.md)
 - 📚 Related work: TFVTG — Zheng et al., ECCV 2024 ([arXiv:2408.16219](https://arxiv.org/abs/2408.16219)) · zero-shot moment retrieval with off-the-shelf models — Diwan et al., 2022 ([arXiv:2211.02178](https://arxiv.org/abs/2211.02178))
