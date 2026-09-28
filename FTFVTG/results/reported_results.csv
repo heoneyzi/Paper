@@ -1,0 +1,5 @@
+method,training,backbone,proposal_strategy,didemo_r1_iou0.5_pct,vidstg_miou_pct,gpu_memory_mib
+Off-the-shelf (Diwan et al. 2022),training-free,CLIP + PySceneDetect + watershed,shot detection + watershed,13.31,24.22,1300
+TFVTG without LLM stage (Zheng et al. 2024),training-free,BLIP-2,sliding window,15.56,24.94,9537
+FTF-VTG (ours),training-free,CLIP ViT-B/32,similarity-curve post-processing,19.30,39.01,788
+TA-STVG (trained reference),trained,,,,51.01,29035

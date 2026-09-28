@@ -1,0 +1,4 @@
+configuration,stage_added,answer_em_pct,answer_f1_pct
+Retrieve + QA baseline,MDR retrieval + UnifiedQA on the original question,24.16,33.15
++ Self-aware forward CoT,decomposition + forward reasoning with evidence checks,32.67,42.62
+Full Bi-CoT,+ reverse verification,42.77,55.40
