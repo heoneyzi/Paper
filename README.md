@@ -12,13 +12,6 @@
 
 Each folder is a paper page: the question, the method in one diagram, the headline numbers (scoped exactly as reported), what I contributed, how to cite it, and a code snapshot or a link to the full research program.
 
-<details>
-<summary><b>🇰🇷 한국어 요약</b></summary>
-
-채택된 논문 세 편을 모았습니다. **GDTR**은 DNA 언어모델(Evo 2)이 염기마다 몇 번째 층에서 판단을 마치는지 재는 해석 도구로, ICML 2026 GenBio 워크숍 구두 발표(Oral)에 선정되었습니다(저자). **FTF-VTG**는 추가 학습 없이 CLIP 하나로 영상 속 문장이 가리키는 구간을 찾는 방법으로 2025 대한전자공학회 하계학술대회에 채택되었고(제1저자), **Bi-CoT**는 다단계 질의응답의 추론 과정을 단계별로 드러내고 거꾸로 검증하는 방법으로 제6회 한국인공지능학술대회에 채택되었습니다(제1저자). 각 폴더에는 문제·방법·핵심 결과·기여·인용 정보가 정리되어 있습니다.
-
-</details>
-
 <table>
 <tr>
 <td width="33%" valign="top">

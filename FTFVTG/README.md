@@ -20,13 +20,6 @@
 > [!TIP]
 > **TL;DR** — Video temporal grounding (VTG) returns the start and end of the moment a sentence describes. FTF-VTG treats a video as a sequence of still frames: one frozen CLIP model scores every frame against the query, and a short signal-processing pipeline turns that similarity curve into a segment — no training, no proposal network, no LLM. In the paper's result notes it reaches **19.30 R@1 (IoU ≥ 0.5) on DiDeMo** and **39.01 mIoU on VidSTG** using **788 MiB** of GPU memory, versus 15.56 / 24.94 at 9,537 MiB for a TFVTG baseline run without its LLM stage.
 
-<details>
-<summary><b>🇰🇷 한국어 요약</b></summary>
-
-동영상에서 문장으로 설명된 장면이 '언제' 나오는지 찾는 Video Temporal Grounding(VTG) 연구입니다. 기존 방법은 구간 라벨로 모델을 학습하거나, 학습이 필요 없는 방법이라도 LLM과 무거운 VLM을 함께 써서 자원이 많이 듭니다. FTF-VTG는 영상을 사진이 이어진 사진첩으로 보고, CLIP 하나로 각 프레임이 문장과 얼마나 비슷한지 점수를 매긴 뒤, 그 점수 곡선을 스무딩·기울기·임계값·병합·점수화라는 간단한 후처리만으로 구간으로 바꿉니다. 비유하자면 심전도 그래프에서 파형이 확 올라갔다가 내려오는 구간을 찾아내는 것과 같습니다. 결과 노트 기준으로 DiDeMo R@1(IoU≥0.5) 19.30, VidSTG mIoU 39.01을 GPU 메모리 788 MiB로 얻었고, LLM 단계를 뺀 TFVTG 기준선(15.56 / 24.94, 9,537 MiB)보다 높았습니다. 이 연구는 2025 대한전자공학회 하계종합학술대회에 채택되었습니다. 저는 deep daiv. 멀티모달 트랙의 VTG 리서치 팀장이자 제1저자이며, 공개 코드의 정리와 유지보수도 맡고 있습니다.
-
-</details>
-
 | | |
 |---|---|
 | **Period** | Nov 2024 – Summer 2025 (deep daiv. multimodal track → IEIE Summer Annual Conference 2025) |

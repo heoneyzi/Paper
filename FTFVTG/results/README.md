@@ -11,13 +11,6 @@
 | **Compute** | GPU memory recorded with `nvidia-smi` (values below) |
 | **Headline** | DiDeMo R@1 (IoU ≥ 0.5) **19.30** · VidSTG mIoU **39.01** · **788 MiB** |
 
-<details>
-<summary><b>🇰🇷 한국어 요약</b></summary>
-
-논문 결과 노트(2025)에 적힌 수치를 그대로 옮긴 표입니다. FTF-VTG는 학습 없이 DiDeMo R@1(IoU≥0.5) 19.30, VidSTG mIoU 39.01을 GPU 메모리 788 MiB로 기록했습니다. 하이퍼파라미터 탐색은 같은 VidSTG 데이터에서 진행되었으므로, 새 실험에서는 검증 세트로 값을 고정해야 합니다. 이 포트폴리오에서 다시 실행한 결과는 아닙니다.
-
-</details>
-
 ## Setup
 
 - **Tasks.** *Temporal grounding (VTG)* — predict one span per query; report R@1 at IoU ≥ 0.5 (DiDeMo) and mean IoU (VidSTG). *Moment retrieval (VMR)* on DiDeMo — rank DiDeMo's 21 candidate moments (contiguous runs of its six 5-second bins) by IoU with the predicted span; report R@1.

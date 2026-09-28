@@ -20,13 +20,6 @@
 > [!TIP]
 > **TL;DR** — Multi-hop questions chain several facts, and forward-only pipelines let an early wrong answer propagate silently. Bi-CoT splits a question into dependency-coded sub-questions, answers each with a frozen retriever (MDR) and reader (UnifiedQA), checks every step against its evidence with self-aware forward reasoning (GPT-4.1 / GPT-4o prompts), then re-checks the chain in reverse before answering — no parameter updates. In the **draft-reported** HotpotQA full-wiki experiment, answer EM / F1 rise from **24.16 / 33.15** (retrieve + QA baseline) to **42.77 / 55.40** (+18.61 / +22.25 points).
 
-<details>
-<summary><b>🇰🇷 한국어 요약</b></summary>
-
-여러 문서의 사실을 이어 붙여야 답할 수 있는 Multi-hop 질의응답(QA) 연구입니다. 앞 단계에서 틀린 답이 뒤 단계로 그대로 전달되는 문제와, 모델이 어떤 근거로 답했는지 보이지 않는 문제를 함께 다뤘습니다. Bi-CoT는 질문을 의존 관계가 표시된 하위 질문으로 나누고, 고정된 검색기(MDR)와 QA 모델(UnifiedQA)로 각 하위 질문에 답한 뒤, LLM 프롬프트로 근거를 하나하나 점검하는 순방향 추론과 원래 질문에서 거꾸로 사슬을 다시 확인하는 역방향 검증을 거칩니다. 비유하자면 수학 문제를 푼 뒤 답을 거꾸로 대입해 검산하는 과정과 같습니다. 초안에 보고된 HotpotQA 실험에서 EM/F1이 24.16/33.15에서 42.77/55.40으로 올랐으며, 이 수치는 다시 실행해 검증한 값이 아니라 초안 기준입니다. 저는 제1저자이며, 공개된 연구 노트북은 제 연구 아카이브에서 나왔습니다.
-
-</details>
-
 | | |
 |---|---|
 | **Period** | 2025 (ideation notes from Jul 2025; accepted at the 6th Korea AI Conference, 2025) |

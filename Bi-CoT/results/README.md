@@ -11,13 +11,6 @@
 | **Compute** | not recorded (hosted LLM API + a GPU for MDR / UnifiedQA) |
 | **Headline** | answer EM / F1 **24.16 / 33.15 → 42.77 / 55.40** (+18.61 / +22.25 points) |
 
-<details>
-<summary><b>🇰🇷 한국어 요약</b></summary>
-
-논문 초안의 첫 번째 결과 표를 옮긴 것입니다. 검색+QA 기준선에서 순방향 추론을 더하면 EM/F1이 32.67/42.62, 역방향 검증까지 더하면 42.77/55.40이 됩니다. 전체 질문 중 65.3%만 역방향 검증 단계에 들어갔고, 나머지는 검색·QA 단계에서 필요한 근거를 얻지 못했습니다. 다시 실행해 확인한 값은 아닙니다.
-
-</details>
-
 ## Setup
 
 - **Baseline** — the original question goes straight through MDR retrieval and UnifiedQA.

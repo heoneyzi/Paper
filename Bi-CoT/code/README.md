@@ -11,13 +11,6 @@
 | **Compute** | evaluator: Python standard library, CPU · notebooks: a GPU for MDR / UnifiedQA plus OpenAI API access |
 | **Headline** | synthetic evaluator check → **50.0 EM / 83.33 F1** (2 questions; a functionality test, not a result) |
 
-<details>
-<summary><b>🇰🇷 한국어 요약</b></summary>
-
-Bi-CoT 공개 저장소의 연구 노트북 6개와 오프라인 평가 도구를 그대로 옮긴 폴더입니다. 노트북은 실제 실험 코드이지만 대안 셀과 외부 의존성(HotpotQA, MDR, UnifiedQA, OpenAI API)이 있어 한 번에 재현되는 형태는 아닙니다. 공개 전에 노트북 출력, API 키 문자열, 개인 경로를 제거했습니다. 평가 도구는 표준 라이브러리만으로 바로 실행되며, 합성 예제에서 EM 50.0 / F1 83.33을 확인했습니다.
-
-</details>
-
 ## Setup
 
 ```bash

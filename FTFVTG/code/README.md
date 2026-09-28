@@ -11,13 +11,6 @@
 | **Compute** | CPU only; Python ≥ 3.10 with NumPy, PyTorch, OpenCV |
 | **Headline** | `pytest`: **12 passed** · demo curve (low–high–low) → samples **11–29** |
 
-<details>
-<summary><b>🇰🇷 한국어 요약</b></summary>
-
-FTF-VTG 공개 코드를 그대로 옮긴 폴더입니다. 프레임–질의 유사도 곡선 하나를 넣으면 이벤트 구간(시작·끝 샘플 번호)을 돌려주며, CPU만으로 실행됩니다. 2026년 9월 유지보수 판에서 CLI, 입력 검증, 데이터셋 평가 어댑터, 12개 테스트가 정리되었고, 이 포트폴리오에서 테스트를 다시 돌려 모두 통과했습니다. 논문 수치를 재현하려면 원본 데이터셋과 CLIP 유사도 추출 결과가 따로 필요합니다.
-
-</details>
-
 ## Setup
 
 ```bash

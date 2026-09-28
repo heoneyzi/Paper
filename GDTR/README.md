@@ -15,19 +15,6 @@
 > [!TIP]
 > **TL;DR** — GDTR is a training-free lens that gives every nucleotide a *settling depth*: the first layer at which its residual-stream state lines up with the model's final state. On Evo 2 7B, splice donor/acceptor sites settle ~2 layers earlier than intronic and coding sequence (donor Cohen's *d* = −0.43 against a chr22 per-position background), and a threshold calibrated on chr22 transfers to held-out chr17 with **94.6 % of the effect magnitude retained**. Motif edits and flank shuffles push the depth in opposite directions, and ClinVar consequence classes peak at different layers (Kruskal–Wallis *p* = 3.0 × 10⁻¹⁰).
 
-<details>
-<summary><b>🇰🇷 한국어 요약</b></summary>
-
-GDTR은 DNA 언어모델(Evo 2 7B)이 염기 하나하나에 대해 **몇 번째 층에서 판단을 마치는지**를 재는, 추가 학습이 필요 없는 해석 도구입니다.
-각 층의 내부 표현(residual stream)이 마지막 층의 표현과 얼마나 같은 방향을 가리키는지(코사인 거리)를 층마다 보고, 처음으로 충분히 가까워지는 층을 그 염기의 **정착 깊이(settling depth)** 로 정합니다.
-비유하자면 여러 편집자가 차례로 원고를 고칠 때 "몇 번째 편집자부터 이 문장이 더 이상 바뀌지 않는가"를 기록하는 것과 같습니다.
-그 결과 유전자의 이어붙이기 경계인 스플라이스 부위는 인트론보다 약 2층 먼저 정착했고, 22번 염색체에서 정한 기준을 17번 염색체에 그대로 적용해도 효과 크기의 94.6%가 유지되었습니다.
-핵심 모티프(GT)를 바꾸면 정착이 늦어지고 주변 서열을 섞으면 오히려 빨라져, 이 지표가 "모티프 인식"과 "주변 문맥 통합"을 구분해 보여 줍니다.
-ClinVar 변이도 종류(넌센스·미스센스·동의 변이 등)에 따라 표현을 가장 크게 흔드는 층이 달랐습니다.
-저는 저자로서 Evo 2의 층별 정착 분석에 참여했습니다.
-
-</details>
-
 | | |
 |---|---|
 | **Venue** | ICML 2026 GenBio **Workshop** — accepted for oral presentation (a workshop paper, not the main conference) |
