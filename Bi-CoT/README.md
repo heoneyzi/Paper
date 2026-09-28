@@ -11,9 +11,9 @@
 ![Role: First Author](https://img.shields.io/badge/Role-First%20Author-334155?style=flat-square)
 ![Status: Completed](https://img.shields.io/badge/Status-Completed-16a34a?style=flat-square)
 
-*Bi-CoT: Forward Reasoning and Reverse Verification for Explainable Multi-Hop QA* — **Jiheon Kang**, Suhwan Jung
+*Plug-and-Play Bi-CoT: Self-Aware Forward Reasoning and Reverse Verification for Explainable Multi-Hop QA* — **Jiheon Kang**, Suhwan Jung
 
-[💻 Code (original repo)](https://github.com/heoneyzi/Bi-CoT) · [📦 Code in this portfolio](code/README.md) · [🗒️ Ideation notes](notes/README.md) · [🌐 Research site](https://heoneyzi.github.io)
+[📄 Paper (PDF)](Plug-and-Play%20Bi-CoT%20-%20Self-Aware%20Forward%20Reasoning%20and%20Reverse%20Verification%20for%20Explainable%20Multi-Hop%20QA.pdf) · [💻 Code (original repo)](https://github.com/heoneyzi/Bi-CoT) · [📦 Code in this portfolio](code/README.md) · [🗒️ Ideation notes](notes/README.md) · [🌐 Research site](https://heoneyzi.github.io)
 
 </div>
 
@@ -85,6 +85,7 @@ The coverage number is the useful diagnostic: reverse verification could only ru
 
 ```text
 Bi-CoT/
+├── Plug-and-Play Bi-CoT - Self-Aware Forward Reasoning and Reverse Verification for Explainable Multi-Hop QA.pdf  ← paper PDF
 ├── README.md            ← you are here
 ├── assets/              ← method diagram (manuscript) + ablation chart (light/dark)
 ├── results/             ← draft-reported numbers (CSV), chart script, README
@@ -115,7 +116,7 @@ Not included: HotpotQA, the MDR retriever weights and Wikipedia index, UnifiedQA
 > - The notebooks contain the decomposition, retrieval/QA, forward-CoT and final aggregation code; a standalone, verified implementation of every reverse-verification step was not recovered.
 > - A second table in the draft compares against fine-tuned systems on a conditional subset (questions where the QA answer was usable); it is not used as a headline.
 > - LLM stages call hosted models (GPT-4.1, GPT-4o) whose snapshots change, so a re-run is a new experiment.
-> - The upstream archive uses the manuscript title (*Plug-and-Play Bi-CoT: Self-Aware Forward Reasoning and Reverse Verification for Explainable Multi-Hop QA*) and spells the co-author “Suhwan Jeong”; this page follows the CV.
+> - The uploaded PDF uses the title shown above and spells the co-author “Jeong Su Hwan”; author romanization on this page follows the CV.
 
 ## 🔗 Links
 
@@ -128,14 +129,14 @@ Not included: HotpotQA, the MDR retriever weights and Wikipedia index, UnifiedQA
 
 ```bibtex
 @inproceedings{kang2025bicot,
-  title     = {Bi-CoT: Forward Reasoning and Reverse Verification for Explainable Multi-Hop QA},
+  title     = {Plug-and-Play Bi-CoT: Self-Aware Forward Reasoning and Reverse Verification for Explainable Multi-Hop QA},
   author    = {Kang, Jiheon and Jung, Suhwan},
   booktitle = {The 6th Korea Artificial Intelligence Conference},
   year      = {2025}
 }
 ```
 
-Title and author spelling follow the CV; [`code/CITATION.cff`](code/CITATION.cff) keeps the manuscript's longer title.
+The title follows the uploaded PDF; author romanization follows the CV.
 
 </details>
 
