@@ -6,7 +6,7 @@
 
 **At which layer does a DNA language model "make up its mind" about a nucleotide — and does that depth tell us anything about biology?**
 
-[![ICML 2026: GenBio Workshop](https://img.shields.io/badge/ICML%202026-GenBio%20Workshop-0f766e?style=flat-square)](https://openreview.net/forum?id=Z9h1jiPbus) ![Award: Oral presentation](https://img.shields.io/badge/Award-Oral%20presentation-b45309?style=flat-square) ![Year: 2026](https://img.shields.io/badge/Year-2026-0f766e?style=flat-square) ![Role: Author](https://img.shields.io/badge/Role-Author-334155?style=flat-square) ![Status: Accepted · bioRxiv preprint](https://img.shields.io/badge/Status-Accepted%20%C2%B7%20bioRxiv%20preprint-16a34a?style=flat-square) ![Follow-up: ongoing](https://img.shields.io/badge/Follow--up-ongoing-f59e0b?style=flat-square)
+[![ICML 2026: GenBio Workshop](https://img.shields.io/badge/ICML%202026-GenBio%20Workshop-0f766e?style=flat-square)](https://openreview.net/forum?id=Z9h1jiPbus) ![Award: Oral presentation](https://img.shields.io/badge/Award-Oral%20presentation-b45309?style=flat-square) ![Year: 2026](https://img.shields.io/badge/Year-2026-0f766e?style=flat-square) ![Role: Author](https://img.shields.io/badge/Role-Author-334155?style=flat-square) ![Status: Accepted · bioRxiv preprint](https://img.shields.io/badge/Status-Accepted%20%C2%B7%20bioRxiv%20preprint-16a34a?style=flat-square) ![Follow-up: submitted to ICLR 2027](https://img.shields.io/badge/Follow--up-submitted%20to%20ICLR%202027-2563eb?style=flat-square)
 
 [📄 OpenReview](https://openreview.net/forum?id=Z9h1jiPbus) · [📑 bioRxiv](https://www.biorxiv.org/content/10.64898/2026.07.14.738370v1) · [💻 Team code (TDiG)](https://github.com/YAICON-8th-Think-Deep-in-Genome/TDiG) · [🔬 Full research program](https://github.com/heoneyzi/Medical/blob/main/GDTR/README.md)
 
@@ -22,7 +22,7 @@
 | **My role** | Author — layer-wise settling analysis on Evo 2 7B ([details](#-my-contribution)) |
 | **Model / data** | Evo 2 7B · GRCh38 chr22 (calibration) + chr17 (held-out) · GENCODE v44 · ClinVar (2026-04-18) · ENCODE cCRE, GTEx eQTL, GWAS Catalog |
 | **Stack** | PyTorch · Evo 2 / Vortex · NumPy · SciPy · scikit-learn · one NVIDIA H200 (~20 GPU-hours end-to-end) |
-| **Status** | ✅ Accepted (Oral) · preprint on bioRxiv · 🔄 follow-up research ongoing — see [01_Medical/GDTR](https://github.com/heoneyzi/Medical/blob/main/GDTR/README.md) |
+| **Status** | ✅ Accepted (Oral) · preprint on bioRxiv · 📝 follow-up submitted to ICLR 2027 — see [01_Medical/GDTR](https://github.com/heoneyzi/Medical/blob/main/GDTR/README.md) |
 
 <p align="center"><img src="assets/hero.png" width="760" alt="Schematic of the GDTR cosine lens: per-layer cosine distance to the final state, running minimum, threshold, settling depth"></p>
 <p align="center"><sub>Figure 1 of the paper. Each layer's residual state is compared with the final state (cosine lens); the running minimum first drops below γ at the settling depth — here c(t) = 30.</sub></p>
@@ -117,13 +117,13 @@ Re-running the forward passes needs Evo 2 7B on a ≥80 GB GPU (an H200 was used
 > - Effect sizes are modest (|*d*| ≈ 0.2–0.6). With ~10⁷ pooled positions the *p*-values are only sanity checks, as the paper itself states.
 > - Most positions settle only at the last taps — the median c(t) is 31 or 32 in every chr22 context ([`gate_b.json`](https://github.com/heoneyzi/Medical/blob/main/GDTR/gdtr-poc/results/phase1.6/gate_b.json)) — so the contrasts are shifts in the *mean* depth.
 > - The 5′ UTR shift is entropy-coupled (ρ = +0.41) and is reported separately; AUROCs are a sanity check, not a clinical variant scorer.
-> - Follow-up work in this program re-examines the thresholded readout (window-level resampling, per-layer metrics); it is ongoing and unpublished — see [01_Medical/GDTR](https://github.com/heoneyzi/Medical/blob/main/GDTR/README.md).
+> - Follow-up work in this program re-examines the thresholded readout (window-level resampling, per-layer metrics), and the late-layer handoff study has been submitted to ICLR 2027 — see [01_Medical/GDTR](https://github.com/heoneyzi/Medical/blob/main/GDTR/README.md).
 
 ## 🔗 Links
 
 - Paper: [OpenReview](https://openreview.net/forum?id=Z9h1jiPbus) · [bioRxiv](https://www.biorxiv.org/content/10.64898/2026.07.14.738370v1)
 - Code: [TDiG team repository](https://github.com/YAICON-8th-Think-Deep-in-Genome/TDiG) · curated copy of the gDTR proof-of-concept code in [`01_Medical/GDTR/gdtr-poc`](https://github.com/heoneyzi/Medical/blob/main/GDTR/gdtr-poc/README.md)
-- Research program behind the paper (experiments, follow-ups, ongoing work): [01_Medical/GDTR](https://github.com/heoneyzi/Medical/blob/main/GDTR/README.md)
+- Research program behind the paper (experiments and follow-ups, including the handoff paper submitted to ICLR 2027): [01_Medical/GDTR](https://github.com/heoneyzi/Medical/blob/main/GDTR/README.md)
 - Background notes on genomic language models: [03_Study/Genomics](https://github.com/heoneyzi/Study/blob/main/Genomics/README.md)
 
 ---

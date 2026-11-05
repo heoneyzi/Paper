@@ -18,7 +18,7 @@ Each folder is a paper page: the question, the method in one diagram, the headli
 <a href="GDTR/README.md"><img src="GDTR/assets/hero.png" alt="🧬 GDTR — Layer-wise Settling Depth Reveals Biological Grammar in Genomic Foundation Models" width="100%"></a>
 <br><b><a href="GDTR/README.md">🧬 GDTR — Layer-wise Settling Depth Reveals Biological Grammar in Genomic Foundation Models</a></b>
 <br><sub>Y. Cho, <b>J. Kang</b>, S. Park, S. Kim · a training-free settling depth for every nucleotide in Evo 2 7B; a chr22 calibration keeps 94.6 % of the effect on held-out chr17.</sub>
-<br><sub><b>ICML 2026 GenBio Workshop — Oral · Author · follow-up ongoing</b></sub>
+<br><sub><b>ICML 2026 GenBio Workshop — Oral · Author · follow-up submitted to ICLR 2027</b></sub>
 </td>
 <td width="33%" valign="top">
 <a href="FTFVTG/README.md"><img src="FTFVTG/assets/observation.png" alt="🎬 FTF-VTG — Maximizing Frame-Level Video Understanding for Efficient Video Temporal Grounding" width="100%"></a>
@@ -49,7 +49,7 @@ A common thread: rather than training bigger models, each paper asks what a **fr
 
 ## 🔗 Related
 
-- [🩺 01_Medical/GDTR](https://github.com/heoneyzi/Medical/blob/main/GDTR/README.md) — the experiments behind GDTR, the TDiG follow-up and the ongoing Evo 2 handoff line.
+- [🩺 01_Medical/GDTR](https://github.com/heoneyzi/Medical/blob/main/GDTR/README.md) — the experiments behind GDTR, the TDiG follow-up and the Evo 2 handoff paper submitted to ICLR 2027.
 - [🎥 04_Deep_Daiv/Project/Multimodal](https://github.com/heoneyzi/Deep_Daiv/blob/main/Project/Multimodal/README.md) — the study track and research team that produced FTF-VTG.
 - [🌀 03_Study/Hallucination](https://github.com/heoneyzi/Study/blob/main/Hallucination/README.md) — multimodal-LLM hallucination study that grew out of the same interest in what models attend to.
 
